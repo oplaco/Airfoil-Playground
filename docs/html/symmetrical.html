@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airfoil Playground</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style_4digit_cambered.css">
+</head>
+<body>
+    <div id="header-div">
+        <h1 style="margin-top: 30px;">Airfoil Playground</h1>
+        <p style="margin-bottom: 30px;">Symmetrical NACA airfoil</p>
+        <div class="icon-div">
+          <a href="../html/index.html">
+            <img src="../images/airfoil.png" alt="airfoil-icon" id="airfoil-icon"> 
+          </a>
+          <p id="icon-text">HOME</p>       
+        </div>
+      </div>
+    <div id="form-div">
+        <form id="form" action="#" onsubmit="return loadSymmetricalAirfoil()" action="post">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="t">Maximum thickness (t)</label>
+                    </div>
+                    <div class="col input-col">
+                        <input id="t" type="number" value="12" max="40" min="1"> 
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="alpha">Angle of attack (&#945)</label>
+                    </div>
+                    <div class="col input-col">
+                        <input id="alpha" type="number" value="0" max="10" min="-10"> 
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <input id="submit-btn" type="submit" class="btn btn-primary" value="Plot" style="width: 30%">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div id="canvas-div">
+        <div style="position: relative">
+            <canvas id="canvas" width="1400" height="700"></canvas>
+            <button id = "clearcanvas-btn" onclick="return clearCanvas()">Clear Canvas</button>
+            <div class="p-div" style="position: absolute; top: 0%; left: 50%;">
+                <p id="NACA-p"></p>
+            </div>
+            <div class="legend-div" style="position: absolute; top: 0%; right: 0%;">
+                <img src="../images/Leyenda1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+</body>
+    <script src="../javascript/index.js"></script>
+</html>

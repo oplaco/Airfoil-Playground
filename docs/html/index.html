@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airfoil Playground</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+  <body>
+    <div id="header-div">
+        <h1 style="margin-top: 30px;">Airfoil Playground</h1>
+        <p style="margin-bottom: 30px;">Generate the cross-section of a 4-digit symmetrical, 4-digit cambered or a 5-digit cambered NACA airfoil</p>
+        <div class="icon-div">
+          <a href="../html/index.html">
+            <img src="../images/airfoil.png" alt="airfoil-icon" id="airfoil-icon"> 
+          </a>
+          <p id="icon-text" style="color: black;">HOME</p>        
+        </div>
+      </div>
+
+    <div class="container">
+        <div class="card" style="width: 100%;">
+            <img src="../images/symmetrical.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Generate a NACA symmetrical airfoil, the simplest one. You can tinker with the thickness (t) and angle of attack (&#945)</p>
+              <a href="../html/symmetrical.html" class="btn btn-primary">Symmetrical</a>
+            </div>
+          </div>
+          <div class="card" style="width: 100%;">
+            <img src="../images/4-digit-cambered.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Generate a 4 digit cambered NACA airfoil. Play around with the maximum camber and it´s location, thickness (t) and angle of attack (&#945)</p>
+              <a href="../html/4-digit.html" class="btn btn-primary">4-digit</a>
+            </div>
+          </div>
+          <div class="card" style="width: 100%;">
+            <img src="../images/5-digit-cambered.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Generate a 5 digit cambered NACA airfoil. Edit the location and type of the maximum camber, the thickness (t) and the  angle of attack (&#945)</p>
+              <a href="../html/5-digit.html" class="btn btn-primary">5-digit</a>
+            </div>
+          </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

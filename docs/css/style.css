@@ -1,0 +1,44 @@
+#header-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #0054DC;
+    color:#FFFFFF;
+}
+
+.icon-div{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+}
+
+#icon-text{
+    position: relative;
+    top: -95px;
+    left: 30px;
+    font-size: 0.8rem;
+}
+
+#airfoil-icon{
+    position: relative;
+    top: -50px;
+    height: 100px;
+}
+
+.container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    margin: 5px;
+}
+
+.card a{
+    display: flex;
+    justify-content: center;
+}

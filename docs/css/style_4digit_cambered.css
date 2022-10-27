@@ -1,0 +1,81 @@
+#header-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D6EFD;
+}
+.icon-div{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+}
+
+#icon-text{
+    position: relative;
+    top: -95px;
+    left: 30px;
+    font-size: 0.8rem;
+}
+
+#airfoil-icon{
+    position: relative;
+    top: -50px;
+    height: 100px;
+}
+
+#canvas-div{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+#form-div{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #0D6EFD;
+}
+
+.container{
+margin: 0.2rem;
+}
+
+.input-col{
+    text-align: right;
+}
+
+.input-col input{
+    width: 100px;
+}
+
+#canvas{
+    background-color: beige;
+}
+
+#clearcanvas-btn{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    margin: 5px;
+}
+
+#NACA-p{
+    position: relative;
+    left:-42%;
+    margin: 5px;
+    color: black;
+    font-size: 3rem;
+}
